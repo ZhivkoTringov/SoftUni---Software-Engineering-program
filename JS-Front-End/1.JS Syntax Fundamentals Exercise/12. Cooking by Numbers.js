@@ -18,7 +18,3 @@ function solve (num, ...params){
         }
     }
 }
-
-
-
-solve ('9', 'dice', 'spice', 'chop', 'bake', 'fillet')
