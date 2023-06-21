@@ -1,0 +1,37 @@
+html{
+    box-sizing:border-box;
+    }
+    *,
+    *:before,
+    *:after{
+    box-sizing:inherit;
+    }
+    
+body {
+    background-color: rgb(238, 238, 238);
+    font-family: Helvetica, sans-serif;
+    color: rgb(51, 51, 51) ;   
+}
+section {
+    display: inline-block;
+    width: 70%;
+}
+img {
+    display: block;
+    width: 50%;
+    height: auto;
+    background-color: rgb(238, 238, 238);
+    padding: 1rem;
+    margin: 0.5rem;
+}
+aside {
+    
+    display: inline;
+    width:  400px;
+    float: right;
+    top: auto;
+}
+li{
+    list-style-type: square;
+    color: rgb(51, 51, 51) ;
+}
