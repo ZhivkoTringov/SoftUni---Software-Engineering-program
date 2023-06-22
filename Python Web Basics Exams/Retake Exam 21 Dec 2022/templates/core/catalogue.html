@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% if plants %}
+
+        <section id="catalogue">
+
+            {% for plant in plants %}
+                <div class="plant-card">
+                    <div class="image-wrap">
+                        <!-- plant image -->
+                        <img src="{{ plant.image }}"
+                             alt="Indoor Plants">
+                    </div>
+                    <h3>{{ plant.name }}</h3>
+                    <h1>{{ plant.description|truncatechars:20}}</h1>
+                    <div class="details-buttons">
+                        <a href="{% url 'details plant' pk=plant.pk %}" class="details-btn">Details</a>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </section>
+    {% else %}
+        <p class="no-articles">No plants yet</p>
+    {% endif %}
+
+{% endblock %}
